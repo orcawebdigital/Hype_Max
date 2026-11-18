@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const API=location.hostname==="localhost"||location.hostname==="127.0.0.1"?"http://localhost:4000":"https://YOUR-API.onrender.com";
+const API=location.hostname==="localhost"||location.hostname==="127.0.0.1"?"http://localhost:4000":"https://hype-max.onrender.com";
 const ls={get:()=>{try{return localStorage.hm_t}catch{}},set:v=>{try{v?localStorage.hm_t=v:localStorage.removeItem("hm_t")}catch{}}};
 const ST=["available","coming_soon","out_of_stock","draft"];
 const F={products:[["name","text",0,"Name *"],["slug","text",0,"URL slug *"],["price","number"],["compareAt","number",0,"Compare-at price"],["category"],["status","select",ST],["featured","check"],["sort","number"],["shortDescription","textarea"],["description","textarea"],["image","image",0,"Primary image"],["gallery","gallery",0,"Gallery images"],["flavours","list",0,"Flavours (comma separated)"],["ingredients","textarea"],["facts","textarea",0,"Supplement facts"],["serving"],["usage","textarea",0,"Usage instructions"],["specs","textarea",0,"Specifications (one per line)"]],
