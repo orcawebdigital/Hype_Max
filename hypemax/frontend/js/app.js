@@ -1,4 +1,4 @@
-const API=location.hostname==="localhost"||location.hostname==="127.0.0.1"?"http://localhost:4000":"https://YOUR-API.onrender.com";
+const API=location.hostname==="localhost"||location.hostname==="127.0.0.1"?"http://localhost:4000":"https://hype-max.onrender.com";
 const CK="checkout.html";const $=(s,r=document)=>r.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const get=async p=>{const r=await fetch(API+p);if(!r.ok)throw Error("API "+r.status);return r.json()};
 const price=p=>p.price?"₹"+p.price:"Price on WhatsApp";
